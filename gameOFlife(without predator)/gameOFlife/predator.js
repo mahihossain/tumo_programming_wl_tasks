@@ -30,7 +30,7 @@ class Predator {
 
     mul() {
         let newCell = random(this.chooseCell(0))
-        if (this.energy >= 14 && newCell) {
+        if (this.energy >= 20 && newCell) {
             let predator = new Predator(newCell[0], newCell[1])
             predatorsArr.push(predator)
             matrix[newCell[1]][newCell[0]] = 3

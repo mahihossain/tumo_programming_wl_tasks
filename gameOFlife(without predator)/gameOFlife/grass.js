@@ -30,9 +30,9 @@ class Grass {
     }
 
     mul() {
-        this.multiply++;
+        this.multiply += 2;
         let newCell = random(this.chooseCell(0));
-        if (this.multiply >= 8 && newCell) {
+        if (this.multiply >= 4 && newCell) {
             let newGrass = new Grass(newCell[0], newCell[1]);
             grassArr.push(newGrass);
             matrix[newCell[1]][newCell[0]] = 1;
